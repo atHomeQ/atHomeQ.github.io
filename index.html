@@ -33,7 +33,7 @@
 		<!-- Signup Form -->
 			<form id="signup-form" method="post" action="#">
 				<input type="email" name="email" id="email" placeholder="Veuillez saisir votre adresse mail" />
-				<input type="submit" value="Envoyer" />
+				<input type="submit" onclick="myFunction()" value="Envoyer" />
 			</form>
 
 		<!-- Footer -->
@@ -53,10 +53,13 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript">
-				mixpanel.identify("13487");
-				mixpanel.people.set({
-					"$email": document.getElementById('email').value
-				});
+			function myFunction(){
+			mixpanel.identify();
+			mixpanel.people.set({
+			    "$created": new Date(),
+			    "$email": document.getElementById('email').value
+			});
+			}
 			</script>
 	</body>
 </html>
