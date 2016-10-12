@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!-- start Mixpanel -->
@@ -21,20 +22,22 @@
         mixpanel.init("594d3e9bc1347f406fc3dc58bf2a0171");
       </script>
 	  <!-- end Mixpanel -->
+
 	</head>
 	<body>
+		<div class="container">
+			<!-- Header -->
+				<header id="header">
+					<h1>atHomeQ</h1>
+					<p>Marre d'attendre dans une longue queue,<br>"Je s'occupe de tout, tu s'occupe de rien" © J. DEBBOUZE.</p>
+				</header>
 
-		<!-- Header -->
-			<header id="header">
-				<h1>atHomeQ</h1>
-				<p>Marre d'attendre dans une longue queue,<br>"Je s'occupe de tout, tu s'occupe de rien" © J. DEBBOUZE.</p>
-			</header>
-
-		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Veuillez saisir votre adresse mail" />
-				<input type="submit" onclick="myFunction()" value="Envoyer" />
-			</form>
+			<!-- Signup Form -->
+				<form id="signup-form" method="post" action="#">
+					<input type="email" name="email" id="email" placeholder="Veuillez saisir votre adresse mail" />
+					<input type="submit" onclick="myFunction()" value="Envoyer" />
+				</form>
+		</div>
 
 		<!-- Footer -->
 			<footer id="footer">
