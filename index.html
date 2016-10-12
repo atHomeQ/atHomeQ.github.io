@@ -54,11 +54,12 @@
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript">
 			function myFunction(){
-			mixpanel.identify();
-			mixpanel.people.set({
-			    "$created": new Date(),
-			    "$email": document.getElementById('email').value
-			});
+				mixpanel.identify();
+				mixpanel.people.set({
+						"$created": new Date(),
+						"$email": document.getElementById('email').value
+				});
+
 			}
 			</script>
 	</body>
