@@ -162,13 +162,29 @@
 								$submit.disabled = false;
 
 							// Show message.
+
 								$message._show('success', 'Merci, vous recevrez un e-mail très prochainement :)');
 								//$message._show('failure', 'Something went wrong. Please try again.');
 
 						}, 750);
-
+						setTimeout(
+						  function()
+						  {
+						    location.reload();
+						  }, 850);
 				});
 
 		})();
 
 })();
+
+function myFunction(){
+		var regEmail = new RegExp('^[0-9a-z._-]+@{1}[0-9a-z.-]{2,}[.]{1}[a-z]{2,5}$','i');
+		if (regEmail.test(document.getElementById('email').value) == true) {
+			mixpanel.identify();
+			mixpanel.people.set({
+					"$created": new Date(),
+					"$email": document.getElementById('email').value
+			});
+		}
+}

@@ -1,15 +1,11 @@
 <!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
+
 	<head>
+
 		<title>atHomeQ</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -24,6 +20,7 @@
 	  <!-- end Mixpanel -->
 
 	</head>
+
 	<body>
 		<div class="container">
 			<!-- Header -->
@@ -55,19 +52,6 @@
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script type="text/javascript">
-
-			function myFunction(){
-					var regEmail = new RegExp('^[0-9a-z._-]+@{1}[0-9a-z.-]{2,}[.]{1}[a-z]{2,5}$','i');
-					if (regEmail.test(document.getElementById('email').value) == true) {
-						mixpanel.identify();
-						mixpanel.people.set({
-								"$created": new Date(),
-								"$email": document.getElementById('email').value
-						});
-					}
-
-			}
-			</script>
 	</body>
+
 </html>
