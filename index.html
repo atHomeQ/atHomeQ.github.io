@@ -7,7 +7,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!-- start Mixpanel -->
@@ -32,27 +32,33 @@
 
 		<div class="container">
 
+			<div class="col-md-6">
+				
 			<!-- Header -->
 				<header id="header">
 					<img src="./images/logo.png" />
 					<h1>atHomeQ</h1>
-					<p>Marre d'attendre dans une longue queue,<br>"Je s'occupe de tout, tu s'occupe de rien"<br>© J. DEBBOUZE.</p>
+					<p>Marre d'attendre dans une longue queue,<br>"Je s'occupe de tout, tu s'occupe de rien"<br>© J. DEBBOUZE.<br><br></p>
 				</header>
 
-			<div class="col-md-6">
 			<!-- Signup Form -->
+				<p>Pour être le 1er informé du lancement de notre produit,<br>laissez-nous votre adresse e-mail :</p>
 				<form id="signup-form" method="post" action="#">
-					<input type="email" name="email" id="email" placeholder="Veuillez saisir votre adresse mail" />
+					<input type="email" name="email" id="email" placeholder="Adresse e-mail" />
 					<input type="submit" onclick="myFunction()" value="Envoyer" />
 				</form>
 			</div>
 
 			<div class="col-md-6">
-				<img src="./images/final.png" height="50%" width="50%" />
+				<img src="./images/final.png" height="80%" width="80%" />
 			</div>
 
-		</div>
+			<div class="col-md-2"> </div>
+			
+			<div class="col-md-8"><br><br>Adnane -> TEXTE EXPLICATIF</div>
 
+			<div class="col-md-2"> </div>
+			<br><br><br>
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
@@ -65,6 +71,8 @@
 					<li>&copy; atHomeQ.</li>
 				</ul>
 			</footer>
+			
+		</div>
 
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
