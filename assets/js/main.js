@@ -177,3 +177,14 @@
 		})();
 
 })();
+
+function myFunction(){
+		var regEmail = new RegExp('^[0-9a-z._-]+@{1}[0-9a-z.-]{2,}[.]{1}[a-z]{2,5}$','i');
+		if (regEmail.test(document.getElementById('email').value) == true) {
+			mixpanel.identify();
+			mixpanel.people.set({
+					"$created": new Date(),
+					"$email": document.getElementById('email').value
+			});
+		}
+}
