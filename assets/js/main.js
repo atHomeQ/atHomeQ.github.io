@@ -171,7 +171,7 @@
 						  function()
 						  {
 						    location.reload();
-						  }, 850);
+						  }, 1000);
 				});
 
 		})();
