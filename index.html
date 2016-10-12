@@ -27,7 +27,7 @@
 		<!-- Header -->
 			<header id="header">
 				<h1>atHomeQ</h1>
-				<p>Marre d'attendre pour une longue queue,<br>"Je s'occupe de tout, tu s'occupe de rien" © J. DEBBOUZE.</p>
+				<p>Marre d'attendre dans une longue queue,<br>"Je s'occupe de tout, tu s'occupe de rien" © J. DEBBOUZE.</p>
 			</header>
 
 		<!-- Signup Form -->
@@ -53,13 +53,16 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript">
-			function myFunction(){
-				mixpanel.identify();
-				mixpanel.people.set({
-						"$created": new Date(),
-						"$email": document.getElementById('email').value
-				});
 
+			function myFunction(){
+					var regEmail = new RegExp('^[0-9a-z._-]+@{1}[0-9a-z.-]{2,}[.]{1}[a-z]{2,5}$','i');
+					if (regEmail.test(document.getElementById('email').value) == true) {
+						mixpanel.identify();
+						mixpanel.people.set({
+								"$created": new Date(),
+								"$email": document.getElementById('email').value
+						});
+					}
 			}
 			</script>
 	</body>

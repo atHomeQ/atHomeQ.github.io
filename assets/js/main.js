@@ -162,8 +162,8 @@
 								$submit.disabled = false;
 
 							// Show message.
-								$message._show('success', 'Thank you!');
 
+								$message._show('success', 'Merci, vous recevrez un e-mail très prochainement :)');
 								//$message._show('failure', 'Something went wrong. Please try again.');
 
 						}, 750);
