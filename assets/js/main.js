@@ -186,5 +186,6 @@ function myFunction(){
 					"$created": new Date(),
 					"$email": document.getElementById('email').value
 			});
+			mixpanel.track("Email_registred", {   });
 		}
 }
